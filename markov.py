@@ -44,7 +44,7 @@ class MarkovChainer(object):
                 else:
                     sentence = piece
 
-    #Generate the goofy sentences that become your tweet.
+    #Generate sentences for tweet
     def generate_sentence(self):
         res = random.choice(self.beginnings)
         res = res[:]

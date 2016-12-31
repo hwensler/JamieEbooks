@@ -11,9 +11,9 @@ MY_ACCESS_TOKEN_SECRET = 'WtxUwKl8Fj3U6cz5PRYkZkQxMIHUZbi1Kvi3YKxc169EJ'
 SOURCE_ACCOUNTS = [line.rstrip('\n') for line in open('secretsources.txt')]
 
 
-ODDS = 1 #How often do you want this to run? 1/8 times?
-ORDER = 2 #how closely do you want this to hew to sensical? 1 is low and 3 is high.
-DEBUG = False #Set this to False to start Tweeting live
-STATIC_TEST = False #Set this to True if you want to test Markov generation from a static file instead of the API.
+ODDS = 32 #How often do you want this to run? 1/8 times?
+ORDER = 2 #Markov order. 1 = nonsense 3 = coherent 
+DEBUG = False #If false, tweets live
+STATIC_TEST = False #If True, doesn't use API - pulls from static file
 TEST_SOURCE = "test_output.txt" #The name of a text file of a string-ified list for testing. To avoid unnecessarily hitting Twitter API.
-TWEET_ACCOUNT = "altright_ebooks" #The name of the account you're tweeting to.
+TWEET_ACCOUNT = "altright_ebooks" #The name of the twitter account of this ebook

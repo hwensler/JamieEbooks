@@ -99,13 +99,13 @@ if __name__=="__main__":
         for x in range(0,10):
             ebook_tweet = mine.generate_sentence()
 
-        #randomly drop the last word, as Horse_ebooks appears to do.
+        #randomly drop the last word
         if random.randint(0,4) == 0 and re.search(r'(in|to|from|for|with|by|our|of|your|around|under|beyond)\s\w+$', ebook_tweet) != None: 
            print "Losing last word randomly"
            ebook_tweet = re.sub(r'\s\w+.$','',ebook_tweet) 
            print ebook_tweet
     
-        #if a tweet is very short, this will randomly add a second sentence to it.
+        #if a tweet is short, add another sentence
         if ebook_tweet != None and len(ebook_tweet) < 40:
             rando = random.randint(0,10)
             if rando == 0 or rando == 7: 
@@ -116,11 +116,11 @@ if __name__=="__main__":
                 else:
                     ebook_tweet = ebook_tweet
             elif rando == 1:
-                #say something crazy/prophetic in all caps
-                print "ALL THE THINGS"
+                #make a thing ALL CAPS
+                print "ALL CAPS ADDED"
                 ebook_tweet = ebook_tweet.upper()
 
-        #throw out tweets that match anything from the source account.
+        #throw out tweets that match anything from the sources
         if ebook_tweet != None and len(ebook_tweet) < 110:
             for tweet in source_tweets:
                 if ebook_tweet[:-1] not in tweet:
