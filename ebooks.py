@@ -95,7 +95,8 @@ if __name__=="__main__":
             else:
                 tweet+="."
             mine.add_text(tweet)
-            
+
+
         for x in range(0,10):
             ebook_tweet = mine.generate_sentence()
 
