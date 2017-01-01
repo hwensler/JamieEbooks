@@ -11,7 +11,7 @@ MY_ACCESS_TOKEN_SECRET = 'WtxUwKl8Fj3U6cz5PRYkZkQxMIHUZbi1Kvi3YKxc169EJ'
 SOURCE_ACCOUNTS = [line.rstrip('\n') for line in open('secretsources.txt')]
 
 
-ODDS = 32 #How often do you want this to run? 1/8 times?
+ODDS = 32 #How often do you want this to run? 
 ORDER = 2 #Markov order. 1 = nonsense 3 = coherent 
 DEBUG = False #If false, tweets live
 STATIC_TEST = False #If True, doesn't use API - pulls from static file
