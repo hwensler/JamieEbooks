@@ -20,7 +20,7 @@ How to adjust behavior of the bot
 ```
 ODDS = 8
 ```
-This is the chance that your tweet will actually post. If ODDS = 0, a tweet will post every time. If it is 6, each tweet will have a 1/6 chance of posting. This helps the bot run in a pseudorandom fashion. This is done in 'guess = random.choice(range(ODDS);
+This is the chance that your tweet will actually post. If ODDS = 1, a tweet will post every time. If it is 6, each tweet will have a 1/6 chance of posting. This helps the bot run in a pseudorandom fashion. This is done in 'guess = random.choice(range(ODDS);
 
 
 By default, the bot ignores any tweets with URLs in them because those might just be headlines for articles and not text you've written.
