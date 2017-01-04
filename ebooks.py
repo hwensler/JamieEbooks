@@ -13,7 +13,7 @@ from htmlentitydefs import name2codepoint as n2c
 from local_settings import *
 
 #open output logs
-f = open(LOGS,'w')
+f = open(LOGS,'a')
 
 #record start time
 current_time = time.strftime("%m.%d.%y %H:%M", time.localtime())

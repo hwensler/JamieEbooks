@@ -17,3 +17,4 @@ DEBUG = True #If false, tweets live
 STATIC_TEST = False #If True, doesn't use API - pulls from static file
 TEST_SOURCE = "" #a text file of python string lists tweets for testing without hitting twitter API
 TWEET_ACCOUNT = "" #The name of the twitter account of this ebook
+LOGS = "" #a txt file which the program will "print" to, allowing better debugging when running on the cloud
