@@ -1,7 +1,9 @@
 
 #ignore any accounts that may be listed as sources
-/local_settings.py
 /secretsources.txt
+
+#ignore the local settings
+local_settings.py
 
 *.pyc
 .git
